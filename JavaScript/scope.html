@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let globalScope = "Bu bir global değişkendir.";
+
+        function myfunction(){
+            console.log(globalScope);
+        }
+
+        myfunction()
+        console.log(globalScope)
+
+        function myfunctions(){
+            let localScope = "Bu bir function değişkendir";
+            console.log(localScope)
+        }
+
+        myfunctions()
+       // console.log(localScope) HATA VERİR
+
+       if(true){
+        let blockScope = "Bu bir block değişkendir"
+        console.log(blockScope)
+       }
+
+      // console.log(blockScope) HATA VERİR
+    </script>
+</body>
+</html>

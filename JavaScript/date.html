@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let now = new Date();
+        console.log("Şu anki tarih ve saat: ", now)
+
+        let specificDate = new Date('August 19, 2024 23:24:25')
+        console.log(specificDate)
+
+        let year = now.getMonth()
+        console.log(year + 1)//0 dan başlayarak ilerler
+
+        now.setFullYear(2025)
+        console.log(now) 
+
+        let startDate = new Date('August 1, 2024')
+        let endDate = new Date('August 14, 2024')
+        let timeDiff = endDate - startDate
+        console.log(timeDiff)
+        let daysDiff = timeDiff / (1000 * 60 *60*24)
+        console.log(daysDiff)
+
+
+    </script>
+</body>
+</html>
